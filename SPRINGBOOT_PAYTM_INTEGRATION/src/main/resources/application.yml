@@ -1,0 +1,20 @@
+
+paytm:
+  email: krishkhk@gmail.com
+  mobile: 9959293449
+  payment:
+    sandbox:
+      callbackUrl: http://localhost:8080/pgresponse
+      channelId: WEB
+      details:
+        CALLBACK_URL: ${paytm.payment.sandbox.callbackUrl}
+        CHANNEL_ID: ${paytm.payment.sandbox.channelId}
+        INDUSTRY_TYPE_ID: ${paytm.payment.sandbox.industryTypeId}
+        MID: ${paytm.payment.sandbox.merchantId}
+        WEBSITE: ${paytm.payment.sandbox.website}
+      industryTypeId: Retail
+      merchantId: sbUAGs31065200656352
+      merchantKey: tqogbKDS0%3rcU7@
+      paytmUrl: https://securegw-stage.paytm.in/order/process
+      website: WEBSTAGING
+
