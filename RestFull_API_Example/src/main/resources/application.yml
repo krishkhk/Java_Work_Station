@@ -1,0 +1,17 @@
+server:
+  port : 8081
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+spring:
+  boot:
+    admin:
+      client:
+        url: [http://localhost:9090]
+  application:
+    name: REST-API-CLIENT.
